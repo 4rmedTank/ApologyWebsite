@@ -27,14 +27,19 @@ h1 {
 
 .video-container {
     margin: 20px 0;
-    display: flex;
-    justify-content: center;
+    position: relative; /* Position relative for iframe container */
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0; /* No height initially */
+    overflow: hidden; /* Hide overflow */
+    max-width: 100%; /* Max width for large screens */
 }
 
 iframe {
-    width: 100%;
-    height: 450px; /* Increased height for a larger video */
-    max-width: 1000px; /* Max width for larger screens */
+    position: absolute; /* Position absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -49,12 +54,12 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px; /* Increased gap between buttons */
     margin: 20px 0;
 }
 
 button, a button {
-    padding: 15px 30px; /* Increased padding for larger buttons */
+    padding: 15px 35px; /* Increased padding for larger buttons */
     font-size: 18px; /* Larger font size */
     border: none;
     border-radius: 30px;
@@ -111,7 +116,7 @@ a#favouriteMomentButton button:hover {
     }
 
     iframe {
-        height: 250px; /* Adjust height for smaller screens */
+        height: auto; /* Let height adjust automatically */
     }
 
     p {
@@ -120,6 +125,6 @@ a#favouriteMomentButton button:hover {
 
     button, a button {
         font-size: 16px;
-        padding: 12px 25px;
+        padding: 12px 30px;
     }
 }
