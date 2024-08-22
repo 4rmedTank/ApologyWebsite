@@ -26,11 +26,13 @@ h1 {
 
 .video-container {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
-video {
+iframe {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -85,5 +87,15 @@ button#redirectButton {
 
 button#redirectButton:hover {
     background-color: #5a0c9b; /* Darker purple */
+    transform: scale(1.05);
+}
+
+button#favouriteMomentButton {
+    background-color: #a76abf; /* Slightly lighter purple */
+    color: white;
+}
+
+button#favouriteMomentButton:hover {
+    background-color: #8e44ad; /* Medium purple */
     transform: scale(1.05);
 }
