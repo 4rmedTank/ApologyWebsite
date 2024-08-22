@@ -5,16 +5,16 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #e0d8f1; /* Light purple background */
+    background-color: #f3e8ff; /* Light purple background */
 }
 
 .container {
     text-align: center;
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 30px;
+    border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
 }
 
@@ -24,21 +24,27 @@ h1 {
     margin-bottom: 20px;
 }
 
-.images {
+.shapes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     margin: 20px 0;
 }
 
-.cute-image {
-    width: 150px;
-    height: 150px;
+.custom-image {
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 15px;
-    border: 3px solid #6a0dad; /* Deep purple border */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 50%; /* Circular shape */
+    border: 5px solid #6a0dad; /* Deep purple border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
 p {
@@ -50,35 +56,35 @@ p {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     margin: 20px 0;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 16px;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 button#changeMessage {
-    background-color: #5bc0de; /* Light blue */
+    background-color: #7f2f8e; /* Medium purple */
     color: white;
 }
 
 button#changeMessage:hover {
-    background-color: #4a9fd7; /* Darker blue */
+    background-color: #6a0dad; /* Deep purple */
     transform: scale(1.05);
 }
 
 button#sendGift {
-    background-color: #5cb85c; /* Light green */
+    background-color: #8e44ad; /* Light purple */
     color: white;
 }
 
 button#sendGift:hover {
-    background-color: #4a9f4a; /* Darker green */
+    background-color: #7f2f8e; /* Medium purple */
     transform: scale(1.05);
 }
