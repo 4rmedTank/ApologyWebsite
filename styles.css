@@ -24,27 +24,15 @@ h1 {
     margin-bottom: 20px;
 }
 
-.shapes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.video-container {
     margin: 20px 0;
 }
 
-.custom-image {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%; /* Circular shape */
-    border: 5px solid #6a0dad; /* Deep purple border */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.custom-image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 p {
@@ -55,8 +43,9 @@ p {
 
 .buttons {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     margin: 20px 0;
 }
 
@@ -86,5 +75,15 @@ button#sendGift {
 
 button#sendGift:hover {
     background-color: #7f2f8e; /* Medium purple */
+    transform: scale(1.05);
+}
+
+button#redirectButton {
+    background-color: #6a0dad; /* Deep purple */
+    color: white;
+}
+
+button#redirectButton:hover {
+    background-color: #5a0c9b; /* Darker purple */
     transform: scale(1.05);
 }
