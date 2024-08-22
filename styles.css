@@ -11,33 +11,37 @@ body {
 .container {
     text-align: center;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 30px; /* Increased padding for more space */
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     max-width: 90%;
-    width: 600px;
+    width: 90%; /* Adjusted width to use more screen space */
+    max-width: 800px; /* Set maximum width */
 }
 
 h1 {
     color: #6a0dad; /* Deep purple */
-    font-size: 2em;
+    font-size: 2.5em; /* Larger font size */
     margin-bottom: 20px;
 }
 
 .video-container {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 iframe {
     width: 100%;
-    height: auto;
+    height: 450px; /* Increased height for a larger video */
+    max-width: 1000px; /* Max width for larger screens */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 p {
     color: #333;
-    font-size: 1em;
+    font-size: 1.2em; /* Larger font size */
     margin: 20px 0;
 }
 
@@ -50,8 +54,8 @@ p {
 }
 
 button, a button {
-    padding: 12px 25px;
-    font-size: 16px;
+    padding: 15px 30px; /* Increased padding for larger buttons */
+    font-size: 18px; /* Larger font size */
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -98,15 +102,24 @@ a#favouriteMomentButton button:hover {
 /* Responsive design */
 @media (max-width: 600px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .container {
-        padding: 15px;
+        padding: 20px;
+        width: 95%; /* Adjust width for small screens */
     }
 
-    button {
-        font-size: 14px;
-        padding: 10px 20px;
+    iframe {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button, a button {
+        font-size: 16px;
+        padding: 12px 25px;
     }
 }
