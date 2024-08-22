@@ -11,35 +11,33 @@ body {
 .container {
     text-align: center;
     background-color: #ffffff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    max-width: 800px;
-    width: 100%;
+    max-width: 90%;
+    width: 600px;
 }
 
 h1 {
     color: #6a0dad; /* Deep purple */
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
 .video-container {
     margin: 20px 0;
-    display: flex;
-    justify-content: center;
 }
 
 iframe {
     width: 100%;
-    max-width: 800px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 p {
     color: #333;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 20px 0;
 }
 
@@ -51,7 +49,7 @@ p {
     margin: 20px 0;
 }
 
-button {
+button, a button {
     padding: 12px 25px;
     font-size: 16px;
     border: none;
@@ -90,12 +88,28 @@ button#redirectButton:hover {
     transform: scale(1.05);
 }
 
-button#favouriteMomentButton {
+a#favouriteMomentButton button {
     background-color: #a76abf; /* Slightly lighter purple */
     color: white;
 }
 
-button#favouriteMomentButton:hover {
+a#favouriteMomentButton button:hover {
     background-color: #8e44ad; /* Medium purple */
     transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }
