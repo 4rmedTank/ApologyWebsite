@@ -56,11 +56,11 @@ button, a button {
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    color: white; /* Ensure text is white */
 }
 
 button#changeMessage {
     background-color: #7f2f8e; /* Medium purple */
-    color: white;
 }
 
 button#changeMessage:hover {
@@ -70,7 +70,6 @@ button#changeMessage:hover {
 
 button#sendGift {
     background-color: #8e44ad; /* Light purple */
-    color: white;
 }
 
 button#sendGift:hover {
@@ -80,7 +79,6 @@ button#sendGift:hover {
 
 button#redirectButton {
     background-color: #6a0dad; /* Deep purple */
-    color: white;
 }
 
 button#redirectButton:hover {
@@ -90,7 +88,6 @@ button#redirectButton:hover {
 
 a#favouriteMomentButton button {
     background-color: #a76abf; /* Slightly lighter purple */
-    color: white;
 }
 
 a#favouriteMomentButton button:hover {
