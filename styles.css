@@ -1,47 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f8f9fa;
+    background-color: #e0d8f1; /* Light purple background */
 }
 
 .container {
     text-align: center;
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    max-width: 600px;
+    width: 100%;
 }
 
 h1 {
-    color: #d9534f;
+    color: #6a0dad; /* Deep purple */
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button#changeMessage {
-    background-color: #5bc0de;
-    color: white;
-}
-
-button#sendGift {
-    background-color: #5cb85c;
-    color: white;
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
 }
 
 .cute-image {
     width: 150px;
-    height: auto;
-    border-radius: 10px;
-    margin: 10px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #6a0dad; /* Deep purple border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+p {
+    color: #333;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button#changeMessage {
+    background-color: #5bc0de; /* Light blue */
+    color: white;
+}
+
+button#changeMessage:hover {
+    background-color: #4a9fd7; /* Darker blue */
+    transform: scale(1.05);
+}
+
+button#sendGift {
+    background-color: #5cb85c; /* Light green */
+    color: white;
+}
+
+button#sendGift:hover {
+    background-color: #4a9f4a; /* Darker green */
+    transform: scale(1.05);
 }
