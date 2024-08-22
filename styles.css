@@ -38,3 +38,10 @@ button#sendGift {
     background-color: #5cb85c;
     color: white;
 }
+
+.cute-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
